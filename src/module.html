@@ -41,7 +41,7 @@
 					<div ng-style="ctrl.panel.colorMode === 'Metric' && !ctrl.panel.isIgnoreOKColors && {'color':ctrl.panel.colors.ok}" ng-repeat="display in ctrl.display">
 						<a ng-show="display.url" ng-href="{{ display.url | interpolateTemplateVars:this }}" target="_blank" style="color:inherit">{{ display.alias }}</a>
 						<span ng-hide="display.url">{{ display.alias }}</span>
-						<span ng-show="display.isDisplayValue"> - {{ display.display_value | numberOrTextWithRegex : display.valueDisplayRegex }}</span>
+						<span ng-show="display.isDisplayValue">: {{ display.display_value | numberOrTextWithRegex : display.valueDisplayRegex }}</span>
 					</div>
 
 					<div ng-style="ctrl.panel.colorMode === 'Metric' && {'color':ctrl.panel.colors.crit}"
@@ -49,7 +49,7 @@
 						 ng-repeat="crit in ctrl.crit">
 						<a ng-show="crit.url" ng-href="{{ crit.url | interpolateTemplateVars:this }}" target="_blank" style="color:inherit">{{ crit.alias }}</a>
 						<span ng-hide="crit.url">{{ crit.alias }}</span>
-						<span ng-show="crit.isDisplayValue"> - {{ crit.display_value | numberOrTextWithRegex : crit.valueDisplayRegex }}</span>
+						<span ng-show="crit.isDisplayValue">: {{ crit.display_value | numberOrTextWithRegex : crit.valueDisplayRegex }}</span>
 					</div>
 
 					<div ng-style="ctrl.panel.colorMode === 'Metric' && {'color':ctrl.panel.colors.warn}"
@@ -57,7 +57,7 @@
 						 ng-repeat="warn in ctrl.warn">
 						<a ng-show="warn.url" ng-href="{{ warn.url | interpolateTemplateVars:this }}" target="_blank" style="color:inherit">{{ warn.alias }}</a>
 						<span ng-hide="warn.url">{{ warn.alias }}</span>
-						<span ng-show="warn.isDisplayValue"> - {{ warn.display_value | numberOrTextWithRegex : warn.valueDisplayRegex }}</span>
+						<span ng-show="warn.isDisplayValue">: {{ warn.display_value | numberOrTextWithRegex : warn.valueDisplayRegex }}</span>
 					</div>
 
 					<div ng-style="ctrl.panel.colorMode === 'Metric' && {'color':ctrl.panel.colors.disable}"
