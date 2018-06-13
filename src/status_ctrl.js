@@ -14,10 +14,10 @@ const panelDefaults = {
 	colorMode: 'Panel',
 	// Changed colors to match Table Panel so colorised text is easier to read
 	colors: {
-		crit: 'rgba(245, 54, 54, 0.9)',
-		warn: 'rgba(237, 129, 40, 0.9)',
-		ok: 'rgba(50, 128, 45, 0.9)',
-		disable: 'rgba(128, 128, 128, 0.9)'
+		crit: 'rgb(255, 112, 133)',
+		warn: 'rgb(244, 213, 152)',
+		ok: 'rgb(171, 219, 191)',
+		disable: 'rgb(239, 239, 239)'
 	},
 	isGrayOnNoData: false,
 	isIgnoreOKColors: false,
