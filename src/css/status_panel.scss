@@ -70,6 +70,12 @@
 	}
 }
 
+.vertical-centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .marquee_container {
 	overflow: hidden;
 

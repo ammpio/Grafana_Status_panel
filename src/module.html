@@ -1,4 +1,4 @@
-﻿<div class="status-panel">
+﻿<div class="status-panel" ng-class="{ 'vertical-centered': ctrl.panel.displayName.length > 0 }">
 	<div ng-show="ctrl.duplicates">
 		<strong>Error</strong>: There are multiple measurements with the same alias. Please give each measurement a unique name.
 	</div>

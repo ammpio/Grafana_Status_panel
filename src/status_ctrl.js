@@ -152,7 +152,7 @@ export class StatusPluginCtrl extends MetricsPanelCtrl {
 	}
 
 	fixPanelHeader() {
-		// Handle the panel top menu height, since it's display doesn't look good with the panel
+		// Handle the panel top menu height, since its display doesn't look good with the panel
 		let panelHeaderHeight = '';
 		if(this.panel.title.length === 0) {
 			panelHeaderHeight = '10px';
@@ -211,7 +211,7 @@ export class StatusPluginCtrl extends MetricsPanelCtrl {
 	}
 
 	onRender() {
-		this.fixPanelHeader();
+		// this.fixPanelHeader();
 		// this.setElementHeight();
 		this.setTextMaxWidth();
 		this.upgradeOldVersion();
