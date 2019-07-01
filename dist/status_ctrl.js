@@ -298,7 +298,7 @@ System.register(["app/plugins/sdk", "lodash", "app/core/time_series2", "app/core
 						var _this5 = this;
 
 						this.fixPanelHeader();
-						this.setElementHeight();
+						// this.setElementHeight();
 						this.setTextMaxWidth();
 						this.upgradeOldVersion();
 
