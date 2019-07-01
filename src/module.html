@@ -1,4 +1,4 @@
-﻿<div class="status-panel" ng-class="{ 'vertical-centered': ctrl.panel.displayName.length > 0 }">
+﻿<div class="status-panel">
 	<div ng-show="ctrl.duplicates">
 		<strong>Error</strong>: There are multiple measurements with the same alias. Please give each measurement a unique name.
 	</div>
@@ -25,7 +25,7 @@
 		</div>
 
 		<div class="bottom_section" ng-style="ctrl.annotation.length === 0 && { 'min-height': ctrl.minHeight }">
-			<div class="status_name_row" ng-hide="ctrl.panel.displayName.length === 0">
+			<div class="status_name_row" ng-if="ctrl.panel.displayName | interpolateTemplateVars:this">
 				<h1>
 					<a ng-href="{{ ctrl.uri | interpolateTemplateVars:this }}" target="{{ ctrl.targetBlank ? '_blank' : '_self' }}" ng-if="ctrl.uri">
 						{{ ctrl.panel.displayName | interpolateTemplateVars:this }}

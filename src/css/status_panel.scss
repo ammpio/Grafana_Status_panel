@@ -5,6 +5,10 @@
 	height: 100%;
 	text-align: center;
 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	h1 {
 		font-size: 1.5rem;
 	}
@@ -68,12 +72,6 @@
 		backface-visibility: hidden;
 		transition: transform 0.5s;
 	}
-}
-
-.vertical-centered {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .marquee_container {
