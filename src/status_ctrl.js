@@ -212,7 +212,7 @@ export class StatusPluginCtrl extends MetricsPanelCtrl {
 
 	onRender() {
 		this.fixPanelHeader();
-		this.setElementHeight();
+		// this.setElementHeight();
 		this.setTextMaxWidth();
 		this.upgradeOldVersion();
 
