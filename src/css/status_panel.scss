@@ -83,7 +83,16 @@
 		transition: transform 0.5s;
 
 		display: inline-block;
-		animation: marquee_container 15s linear infinite;
+		animation: marquee_container 10s linear infinite alternate;
+	}
+
+	@keyframes marquee_element {
+		0% { 
+			transform: translateY(70%); 		
+		}
+		100% { 
+			transform: translateX(0%); 
+		}
 	}
 
 	.marquee_element:hover {
