@@ -83,16 +83,7 @@
 		transition: transform 0.5s;
 
 		display: inline-block;
-		animation: marquee_container 10s linear infinite alternate;
-	}
-
-	@keyframes marquee_element {
-		0% { 
-			transform: translateY(70%); 		
-		}
-		100% { 
-			transform: translateX(0%); 
-		}
+		animation: marquee_container 5s linear infinite alternate;
 	}
 
 	.marquee_element:hover {
@@ -102,8 +93,8 @@
 
 /* Make it move */
 @keyframes marquee_container {
-	0%   { transform: translate(0, 100%); }
-	100% { transform: translate(0, -100%); }
+	0%   { transform: translate(0, 0%); }
+	100% { transform: translate(0, -25%); }
 }
 
 .st-card-front {
