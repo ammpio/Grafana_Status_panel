@@ -83,7 +83,7 @@
 		transition: transform 0.5s;
 
 		display: inline-block;
-		animation: marquee_container 5s linear infinite;
+		animation: marquee_container 5s linear infinite alternate;
 	}
 
 	.marquee_element:hover {
