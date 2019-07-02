@@ -166,7 +166,7 @@ export class StatusPluginCtrl extends MetricsPanelCtrl {
 		}
 
 		let element = this.$panelContainer.find('.status-panel')[0];
-		let overflowY = element.offsetHeight < element.scrollHeight;
+		let overflowY = element.offsetHeight < element.scrollHeight - 5;
 		return overflowY;
 	}
 
