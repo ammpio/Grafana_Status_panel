@@ -83,7 +83,7 @@
 		transition: transform 0.5s;
 
 		display: inline-block;
-		animation: marquee_container 5s linear infinite alternate;
+		animation: marquee_container 5s linear infinite;
 	}
 
 	.marquee_element:hover {
@@ -93,7 +93,7 @@
 
 /* Make it move */
 @keyframes marquee_container {
-	0%   { transform: translate(0, 0%); }
+	0%   { transform: translate(0, 25%); }
 	100% { transform: translate(0, -25%); }
 }
 
