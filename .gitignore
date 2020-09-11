@@ -35,3 +35,6 @@ grafana
 .sass-cache/
 /dist/src/
 .sass-cache
+
+# dist conflicting file with upstream
+dist/status_ctrl.js.map
